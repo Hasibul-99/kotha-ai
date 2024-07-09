@@ -22,3 +22,16 @@
     }
   }
 }
+
+.form-group {
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type='checkbox'] {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+  }
+}
