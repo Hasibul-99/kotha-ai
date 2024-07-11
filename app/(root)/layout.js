@@ -13,11 +13,7 @@ const RootLayout = (props) => {
 
   return (
     <>
-      <div className='bg-[#F3F3F3] h-screen flex'>
-        <div className='inline-flex items-center m-auto align-middle'>
-          {children}
-        </div>
-      </div>
+      <div className='bg-[#F3F3F3] h-screen'>{children}</div>
     </>
   )
 }
