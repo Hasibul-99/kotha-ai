@@ -1,4 +1,5 @@
 import Navbar from '@/components/common/Navbar'
+import Link from 'next/link'
 import {Fragment} from 'react'
 
 export default function Home() {
@@ -39,9 +40,12 @@ export default function Home() {
                 </div>
                 <div className='flex justify-center mx-auto '>
                   <div className='px-[22px] py-[7px] w-[199px] h-[60px] bg-[#000A11] rounded-[12px] flex justify-center items-center cursor-pointer'>
-                    <a className='font-normal text-[16px] leading-[140%] text-[#FFFFFF]'>
+                    <Link
+                      href={'/chat'}
+                      className='font-normal text-[16px] leading-[140%] text-[#FFFFFF]'
+                    >
                       Try for Free
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

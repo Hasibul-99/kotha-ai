@@ -1,23 +1,29 @@
 'use client'
 
 import {ScrollArea} from '@/components/ui/scroll-area'
+import {useTheme} from 'next-themes'
+import Link from 'next/link'
 import {useState} from 'react'
 import {BsInfoCircle} from 'react-icons/bs'
 import {FaEllipsisVertical, FaPlus} from 'react-icons/fa6'
 import {IoSettingsOutline} from 'react-icons/io5'
 
 export default function Chat() {
+  const {setTheme, resolvedTheme} = useTheme()
   const [showChat, setShowChat] = useState(true)
+
   return (
-    <div className='main-chart-wrapper gap-0 lg:flex'>
+    <div className='main-chart-wrapper gap-0 md:flex'>
       <div className='chat-info border dark:border-defaultborder/10 bg-[#fff]'>
         <div className='flex items-center justify-between w-full p-4 border-b dark:border-defaultborder/10'>
-          <div className='flex flex-row items-center p-0 gap-[16px]'>
-            <img src='/assets/images/logo.png' />
-            <span className='font-semibold mb-0 text-[1.25rem] !text-defaulttextcolor dark:text-defaulttextcolor/70'>
-              Kotha.ai
-            </span>
-          </div>
+          <Link href='/'>
+            <div className='flex flex-row items-center p-0 gap-[16px]'>
+              <img src='/assets/images/logo.png' />
+              <span className='font-bold text-[24px] leading-[29px] text-[#000A11]'>
+                Kotha.ai
+              </span>
+            </div>
+          </Link>
         </div>
         <div className='p-4 dark:border-defaultborder/10'>
           <button
@@ -70,20 +76,26 @@ export default function Chat() {
         </div>
       </div>
 
-      <div className='card w-full hidden [&.show]:block [&.active]:xl:block active chat-content'>
+      <div className='card w-full'>
         <div className='flex flex-row justify-between items-center p-[16px] gap-[10px] bg-[#FFFFFF] border-b border-[#E4E4E4]'>
           <div className='font-bold text-[24px] leading-[150%] text-[#000A11]'>
             New Chat
           </div>
           <div className='flex flex-row items-center p-0 gap-[16px]'>
             <div className='flex flex-row items-center p-[8px] gap-[8px] bg-[#E4E4E4] rounded-[12px]'>
-              <span className='w-[24px] h-[24px] bg-[#FFFFFF] rounded-[4px] relative cursor-pointer'>
+              <span
+                onClick={() => setTheme('light')}
+                className='w-[24px] h-[24px] bg-[#FFFFFF] rounded-[4px] relative cursor-pointer'
+              >
                 <img
                   src='/assets/images/sun.png'
                   className='absolute top-[5px] left-[4px]'
                 />
               </span>
-              <span className='w-[24px] h-[24px] rounded-[4px] relative cursor-pointer'>
+              <span
+                onClick={() => setTheme('dark')}
+                className='w-[24px] h-[24px] rounded-[4px] relative cursor-pointer'
+              >
                 <img
                   src='/assets/images/moon.png'
                   className='absolute top-[5px] left-[4px]'
@@ -184,10 +196,6 @@ export default function Chat() {
 
                     <div>
                       <img src='/assets/icons/edit.svg' />
-                      {/* <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' /> */}
                     </div>
                   </div>
 
