@@ -22,7 +22,7 @@ export default function Home() {
                 />
                 <h1
                   data-animate='title'
-                  className='font-bold text-6xl leading-[130%] text-center capitalize text-[#000A11]'
+                  className='font-bold text-[32px] md:text-6xl leading-[130%] text-center capitalize text-[#000A11]'
                   style={{opacity: 1, transform: 'translateY(0px)'}}
                 >
                   Boost your creativity and productivity
@@ -30,7 +30,7 @@ export default function Home() {
                 <div className=''>
                   <p
                     data-animate='subtitle'
-                    className='font-normal text-[20px] leading-[170%] text-center text-[#2D2D2D]'
+                    className='font-normal text-[15px] md:text-[20px] leading-[170%] text-center text-[#2D2D2D]'
                     style={{opacity: 1, transform: 'translateY(0px)'}}
                   >
                     Unleash your full potential with enhanced creativity and
