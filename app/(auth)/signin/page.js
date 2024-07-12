@@ -1,5 +1,6 @@
 'use client'
 
+import {Checkbox} from '@/components/ui/checkbox'
 import Link from 'next/link'
 import {useForm} from 'react-hook-form'
 
@@ -13,7 +14,7 @@ export default function Signin() {
   const onSubmit = (data) => console.log(data)
 
   return (
-    <div className='bg-white gap-6 mx-5 w-full md:w-[460px] border border-[#E4E4E4] rounded-[16px] p-[24px] flex flex-col items-center'>
+    <div className='bg-white gap-6 md:mx-5 w-full md:w-[460px] border border-[#E4E4E4] rounded-[16px] p-[24px] flex flex-col items-center'>
       <img
         src='/assets/images/Frame 4.png'
         className='mx-auto md:w-[72px] md:h-[72px]'
@@ -22,7 +23,7 @@ export default function Signin() {
         Sign in to Kotha.ai
       </div>
 
-      <div className='w-[410px]'>
+      <div className='w-[330px] md:w-[410px]'>
         <form
           autocomplete='off'
           onSubmit={handleSubmit(onSubmit)}
@@ -53,7 +54,7 @@ export default function Signin() {
           </div>
 
           <div className='flex flex-row justify-between items-start p-0 gap-[16px] w-full'>
-            <div className='form-group'>
+            {/* <div className='form-group'>
               <label
                 htmlFor='remember'
                 className='font-medium text-[14px] leading-[140%] text-[#000A11]'
@@ -61,6 +62,20 @@ export default function Signin() {
                 <input type='checkbox' id='remember' /> &nbsp; Remember me
               </label>
               {errors.remember && <p>{errors.remember.message}</p>}
+            </div> */}
+            <div className='flex items-center space-x-2'>
+              <Checkbox
+                id='remember'
+                {...register('remember', {
+                  required: 'You must agree to the terms',
+                })}
+              />
+              <label
+                htmlFor='remember'
+                className='text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
+              >
+                Remember me
+              </label>
             </div>
 
             <div>
