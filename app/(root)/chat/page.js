@@ -114,16 +114,54 @@ export default function Chat() {
                       <div className=''>
                         {/* General  */}
                         <div className='flex flex-col items-start p-[16px] gap-[16px]'>
-                          <div className='flex flex-row justify-between items-center p-0 gap-[200px]'>
-                            <div>Theme</div>
+                          <div className='w-full flex flex-row justify-between items-center p-0 gap-[200px]'>
+                            <div className='font-semibold text-[16px] leading-[140%] text-[#000A11]'>
+                              Theme
+                            </div>
                             <div>
-                              <Select>
+                              <Select defaultValue='light'>
                                 <SelectTrigger className='w-[100px]'>
                                   <SelectValue placeholder='Theme' />
                                 </SelectTrigger>
                                 <SelectContent>
-                                  <SelectItem value='light'>Light</SelectItem>
+                                  <SelectItem value='light' selected>
+                                    Light
+                                  </SelectItem>
                                   <SelectItem value='dark'>Dark</SelectItem>
+                                </SelectContent>
+                              </Select>
+                            </div>
+                          </div>
+
+                          <div className='w-full flex flex-row justify-between items-center p-0 gap-[200px]'>
+                            <div className='font-semibold text-[16px] leading-[140%] text-[#000A11]'>
+                              Language
+                            </div>
+                            <div>
+                              <Select defaultValue='en'>
+                                <SelectTrigger className='w-[100px]'>
+                                  <SelectValue />
+                                </SelectTrigger>
+                                <SelectContent>
+                                  <SelectItem value='en'>English</SelectItem>
+                                  <SelectItem value='bn'>Bangla</SelectItem>
+                                </SelectContent>
+                              </Select>
+                            </div>
+                          </div>
+
+                          <div className='w-full flex flex-row justify-between items-center p-0 gap-[200px]'>
+                            <div className='font-semibold text-[16px] leading-[140%] text-[#000A11]'>
+                              Voice
+                            </div>
+                            <div>
+                              <Select defaultValue='oman'>
+                                <SelectTrigger className='w-[100px]'>
+                                  <SelectValue />
+                                </SelectTrigger>
+                                <SelectContent>
+                                  <SelectItem value='en'>English</SelectItem>
+                                  <SelectItem value='oman'>Oman</SelectItem>
                                 </SelectContent>
                               </Select>
                             </div>
