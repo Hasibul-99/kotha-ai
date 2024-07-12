@@ -1,5 +1,13 @@
 'use client'
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog'
 import {ScrollArea} from '@/components/ui/scroll-area'
 import {useTheme} from 'next-themes'
 import Link from 'next/link'
@@ -7,6 +15,14 @@ import {useState} from 'react'
 import {BsInfoCircle} from 'react-icons/bs'
 import {FaEllipsisVertical, FaPlus} from 'react-icons/fa6'
 import {IoSettingsOutline} from 'react-icons/io5'
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 export default function Chat() {
   const {setTheme, resolvedTheme} = useTheme()
@@ -69,9 +85,56 @@ export default function Chat() {
             <li className='flex flex-row items-center p-[12px] gap-[10px] rounded-[8px]'>
               <BsInfoCircle /> Help
             </li>
-            <li className='flex flex-row items-center px-[12px] gap-[10px] rounded-[8px]'>
-              <IoSettingsOutline /> Settings
-            </li>
+
+            <Dialog className=''>
+              <DialogTrigger>
+                <li className='flex flex-row items-center px-[12px] gap-[10px] rounded-[8px]'>
+                  <IoSettingsOutline /> Settings
+                </li>
+              </DialogTrigger>
+              <DialogContent className='max-w-fit'>
+                <DialogHeader>
+                  <DialogTitle className='py-3'>Settings</DialogTitle>
+                  <DialogDescription className='border-t'>
+                    <div className='flex flex-row items-start p-0'>
+                      <div className='flex flex-col items-center gap-4 py-4 pr-3 border-r border-[#E4E4E4]'>
+                        <div className='w-40 h-10 px-4 pt-2 bg-[#E4E4E4] rounded-[8px] cursor-pointer'>
+                          General
+                        </div>
+                        <div className='w-40 h-10 px-4 pt-2 border-b cursor-pointer'>
+                          Profile
+                        </div>
+                        <div className='w-40 h-10 px-4 pt-2 border-b cursor-pointer'>
+                          Security
+                        </div>
+                        <div className='w-40 h-10 px-4 pt-2 border-b cursor-pointer'>
+                          Notification
+                        </div>
+                      </div>
+                      <div className=''>
+                        {/* General  */}
+                        <div className='flex flex-col items-start p-[16px] gap-[16px]'>
+                          <div className='flex flex-row justify-between items-center p-0 gap-[200px]'>
+                            <div>Theme</div>
+                            <div>
+                              <Select>
+                                <SelectTrigger className='w-[100px]'>
+                                  <SelectValue placeholder='Theme' />
+                                </SelectTrigger>
+                                <SelectContent>
+                                  <SelectItem value='light'>Light</SelectItem>
+                                  <SelectItem value='dark'>Dark</SelectItem>
+                                </SelectContent>
+                              </Select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
           </ui>
         </div>
       </div>
