@@ -17,7 +17,11 @@ export default function ChatContent() {
               <div className='flex flex-col items-start gap-[24px] p-6'>
                 <div className='flex flex-row items-start p-0 gap-4'>
                   <div className='contents'>
-                    <img src='/assets/images/user.png' className='w-10 h-10' />
+                    <img
+                      src='/assets/images/user.png'
+                      alt='kotha'
+                      className='w-10 h-10'
+                    />
                   </div>
                   <div className='p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
                     What is web design What is web design What is web design
@@ -25,38 +29,42 @@ export default function ChatContent() {
                   </div>
 
                   <div className='contents'>
-                    <img src='/assets/icons/edit.svg' />
+                    <img src='/assets/icons/edit.svg' alt='kotha' />
                   </div>
                 </div>
 
                 <div className='flex flex-row items-start p-0 gap-4'>
                   <div className='w-10 h-10 contents'>
-                    <img src='/assets/images/logo.png' className='w-10 h-10' />
+                    <img
+                      src='/assets/images/logo.png'
+                      alt='kotha'
+                      className='w-10 h-10'
+                    />
                   </div>
                   <div className='flex flex-col md:flex-row items-start gap-4'>
                     <div className='md:max-w-[70%] p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
                       Web design is essentially the art and science of crafting
                       websites. It encompasses a blend of creativity and
                       functionality to deliver an engaging and informative
-                      experience for users. Here's a breakdown of its key
+                      experience for users. Heres a breakdown of its key
                       aspects: Visual Appeal: Web designers focus on the
                       aesthetics of a website, including layout, colors, fonts,
                       and imagery. They strive to create a visually pleasing and
                       consistent user interface (UI) that reflects the brand
                       identity. User Experience (UX): This is paramount in web
-                      design. It's about ensuring users can easily navigate and
+                      design. Its about ensuring users can easily navigate and
                       find the information they need on the website. A
                       well-designed website is intuitive and user-friendly,
                       fostering a positive user experience. Functionality:
-                      Behind the attractive facade lies a website's
+                      Behind the attractive facade lies a websites
                       functionality. Web designers plan and implement features
                       that allow users to interact with the website as intended.
                       This may involve forms, calls to action, or e-commerce
-                      functionalities. Responsiveness: In today's mobile-first
+                      functionalities. Responsiveness: In todays mobile-first
                       world, websites need to adapt to different screen sizes
                       and devices. Web designers ensure websites display
                       seamlessly across desktops, tablets, and smartphones. Web
-                      design vs. Web development: It's important to distinguish
+                      design vs. Web development: Its important to distinguish
                       between these two often confused terms. Web design focuses
                       on the visual and user experience aspects, while web
                       development translates those designs into a functioning
@@ -65,53 +73,61 @@ export default function ChatContent() {
                     </div>
 
                     <div className='flex flex-row md:flex-col items-start p-0 gap-[16px]'>
-                      <img src='/assets/icons/voice.svg' />
-                      <img src='/assets/icons/reset.svg' />
-                      <img src='/assets/icons/copy.svg' />
-                      <img src='/assets/icons/love.svg' />
+                      <img src='/assets/icons/voice.svg' alt='voice' />
+                      <img src='/assets/icons/reset.svg' alt='reset' />
+                      <img src='/assets/icons/copy.svg' alt='copy' />
+                      <img src='/assets/icons/love.svg' alt='love' />
                     </div>
                   </div>
                 </div>
 
                 <div className='flex flex-row items-start p-0 gap-4'>
                   <div>
-                    <img src='/assets/images/user.png' className='w-10 h-10' />
+                    <img
+                      src='/assets/images/user.png'
+                      alt='user'
+                      className='w-10 h-10'
+                    />
                   </div>
                   <div className='p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
                     What is web design
                   </div>
 
                   <div>
-                    <img src='/assets/icons/edit.svg' />
+                    <img src='/assets/icons/edit.svg' alt='edit' />
                   </div>
                 </div>
 
                 <div className='flex flex-row items-start p-0 gap-4'>
                   <div>
-                    <img src='/assets/images/logo.png' className='w-10 h-10' />
+                    <img
+                      src='/assets/images/logo.png'
+                      alt='kotha'
+                      className='w-10 h-10'
+                    />
                   </div>
                   <div className='md:max-w-[70%] p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
                     Web design is essentially the art and science of crafting
                     websites. It encompasses a blend of creativity and
                     functionality to deliver an engaging and informative
-                    experience for users. Here's a breakdown of its key aspects:
+                    experience for users. Heres a breakdown of its key aspects:
                     Visual Appeal: Web designers focus on the aesthetics of a
                     website, including layout, colors, fonts, and imagery. They
                     strive to create a visually pleasing and consistent user
                     interface (UI) that reflects the brand identity. User
-                    Experience (UX): This is paramount in web design. It's about
+                    Experience (UX): This is paramount in web design. Its about
                     ensuring users can easily navigate and find the information
                     they need on the website. A well-designed website is
                     intuitive and user-friendly, fostering a positive user
                     experience. Functionality: Behind the attractive facade lies
-                    a website's functionality. Web designers plan and implement
+                    a websites functionality. Web designers plan and implement
                     features that allow users to interact with the website as
                     intended. This may involve forms, calls to action, or
-                    e-commerce functionalities. Responsiveness: In today's
+                    e-commerce functionalities. Responsiveness: In todays
                     mobile-first world, websites need to adapt to different
                     screen sizes and devices. Web designers ensure websites
                     display seamlessly across desktops, tablets, and
-                    smartphones. Web design vs. Web development: It's important
+                    smartphones. Web design vs. Web development: Its important
                     to distinguish between these two often confused terms. Web
                     design focuses on the visual and user experience aspects,
                     while web development translates those designs into a
@@ -120,55 +136,59 @@ export default function ChatContent() {
                   </div>
 
                   <div>
-                    <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' />
+                    <img src='/assets/icons/voice.svg' alt='voice' />
+                    <img src='/assets/icons/reset.svg' alt='reset' />
+                    <img src='/assets/icons/copy.svg' alt='copy' />
+                    <img src='/assets/icons/love.svg' alt='love' />
                   </div>
                 </div>
                 <div className='flex flex-row items-start p-0 gap-4'>
                   <div>
-                    <img src='/assets/images/user.png' className='w-10 h-10' />
+                    <img
+                      src='/assets/images/user.png'
+                      alt='user'
+                      className='w-10 h-10'
+                    />
                   </div>
                   <div className='p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
                     What is web design
                   </div>
 
                   <div>
-                    <img src='/assets/icons/edit.svg' />
-                    {/* <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' /> */}
+                    <img src='/assets/icons/edit.svg' alt='edit' />
                   </div>
                 </div>
 
                 <div className='flex flex-row items-start p-0 gap-4'>
                   <div>
-                    <img src='/assets/images/logo.png' className='w-10 h-10' />
+                    <img
+                      src='/assets/images/logo.png'
+                      alt='logo'
+                      className='w-10 h-10'
+                    />
                   </div>
                   <div className='md:max-w-[70%] p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
                     Web design is essentially the art and science of crafting
                     websites. It encompasses a blend of creativity and
                     functionality to deliver an engaging and informative
-                    experience for users. Here's a breakdown of its key aspects:
+                    experience for users. Heres a breakdown of its key aspects:
                     Visual Appeal: Web designers focus on the aesthetics of a
                     website, including layout, colors, fonts, and imagery. They
                     strive to create a visually pleasing and consistent user
                     interface (UI) that reflects the brand identity. User
-                    Experience (UX): This is paramount in web design. It's about
+                    Experience (UX): This is paramount in web design. Its about
                     ensuring users can easily navigate and find the information
                     they need on the website. A well-designed website is
                     intuitive and user-friendly, fostering a positive user
                     experience. Functionality: Behind the attractive facade lies
-                    a website's functionality. Web designers plan and implement
+                    a websites functionality. Web designers plan and implement
                     features that allow users to interact with the website as
                     intended. This may involve forms, calls to action, or
-                    e-commerce functionalities. Responsiveness: In today's
+                    e-commerce functionalities. Responsiveness: In todays
                     mobile-first world, websites need to adapt to different
                     screen sizes and devices. Web designers ensure websites
                     display seamlessly across desktops, tablets, and
-                    smartphones. Web design vs. Web development: It's important
+                    smartphones. Web design vs. Web development: Its important
                     to distinguish between these two often confused terms. Web
                     design focuses on the visual and user experience aspects,
                     while web development translates those designs into a
@@ -177,67 +197,10 @@ export default function ChatContent() {
                   </div>
 
                   <div>
-                    <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' />
-                  </div>
-                </div>
-                <div className='flex flex-row items-start p-0 gap-4'>
-                  <div>
-                    <img src='/assets/images/user.png' className='w-10 h-10' />
-                  </div>
-                  <div className='p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
-                    What is web design
-                  </div>
-
-                  <div>
-                    <img src='/assets/icons/edit.svg' />
-                    {/* <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' /> */}
-                  </div>
-                </div>
-
-                <div className='flex flex-row items-start p-0 gap-4'>
-                  <div>
-                    <img src='/assets/images/logo.png' className='w-10 h-10' />
-                  </div>
-                  <div className='md:max-w-[70%] p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
-                    Web design is essentially the art and science of crafting
-                    websites. It encompasses a blend of creativity and
-                    functionality to deliver an engaging and informative
-                    experience for users. Here's a breakdown of its key aspects:
-                    Visual Appeal: Web designers focus on the aesthetics of a
-                    website, including layout, colors, fonts, and imagery. They
-                    strive to create a visually pleasing and consistent user
-                    interface (UI) that reflects the brand identity. User
-                    Experience (UX): This is paramount in web design. It's about
-                    ensuring users can easily navigate and find the information
-                    they need on the website. A well-designed website is
-                    intuitive and user-friendly, fostering a positive user
-                    experience. Functionality: Behind the attractive facade lies
-                    a website's functionality. Web designers plan and implement
-                    features that allow users to interact with the website as
-                    intended. This may involve forms, calls to action, or
-                    e-commerce functionalities. Responsiveness: In today's
-                    mobile-first world, websites need to adapt to different
-                    screen sizes and devices. Web designers ensure websites
-                    display seamlessly across desktops, tablets, and
-                    smartphones. Web design vs. Web development: It's important
-                    to distinguish between these two often confused terms. Web
-                    design focuses on the visual and user experience aspects,
-                    while web development translates those designs into a
-                    functioning website using coding languages like HTML, CSS,
-                    and JavaScript.
-                  </div>
-
-                  <div>
-                    <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' />
+                    <img src='/assets/icons/voice.svg' alt='voice' />
+                    <img src='/assets/icons/reset.svg' alt='reset' />
+                    <img src='/assets/icons/copy.svg' alt='copy' />
+                    <img src='/assets/icons/love.svg' alt='love' />
                   </div>
                 </div>
                 <div className='flex flex-row items-start p-0 gap-4'>
@@ -249,11 +212,7 @@ export default function ChatContent() {
                   </div>
 
                   <div>
-                    <img src='/assets/icons/edit.svg' />
-                    {/* <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' /> */}
+                    <img src='/assets/icons/edit.svg' alt='edit' />
                   </div>
                 </div>
 
@@ -265,24 +224,24 @@ export default function ChatContent() {
                     Web design is essentially the art and science of crafting
                     websites. It encompasses a blend of creativity and
                     functionality to deliver an engaging and informative
-                    experience for users. Here's a breakdown of its key aspects:
+                    experience for users. Heres a breakdown of its key aspects:
                     Visual Appeal: Web designers focus on the aesthetics of a
                     website, including layout, colors, fonts, and imagery. They
                     strive to create a visually pleasing and consistent user
                     interface (UI) that reflects the brand identity. User
-                    Experience (UX): This is paramount in web design. It's about
+                    Experience (UX): This is paramount in web design. Its about
                     ensuring users can easily navigate and find the information
                     they need on the website. A well-designed website is
                     intuitive and user-friendly, fostering a positive user
                     experience. Functionality: Behind the attractive facade lies
-                    a website's functionality. Web designers plan and implement
+                    a websites functionality. Web designers plan and implement
                     features that allow users to interact with the website as
                     intended. This may involve forms, calls to action, or
-                    e-commerce functionalities. Responsiveness: In today's
+                    e-commerce functionalities. Responsiveness: In todays
                     mobile-first world, websites need to adapt to different
                     screen sizes and devices. Web designers ensure websites
                     display seamlessly across desktops, tablets, and
-                    smartphones. Web design vs. Web development: It's important
+                    smartphones. Web design vs. Web development: Its important
                     to distinguish between these two often confused terms. Web
                     design focuses on the visual and user experience aspects,
                     while web development translates those designs into a
@@ -291,10 +250,67 @@ export default function ChatContent() {
                   </div>
 
                   <div>
-                    <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' />
+                    <img src='/assets/icons/voice.svg' alt='voice' />
+                    <img src='/assets/icons/reset.svg' alt='reset' />
+                    <img src='/assets/icons/copy.svg' alt='copy' />
+                    <img src='/assets/icons/love.svg' alt='love' />
+                  </div>
+                </div>
+                <div className='flex flex-row items-start p-0 gap-4'>
+                  <div>
+                    <img
+                      src='/assets/images/user.png'
+                      alt='user'
+                      className='w-10 h-10'
+                    />
+                  </div>
+                  <div className='p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
+                    What is web design
+                  </div>
+
+                  <div>
+                    <img src='/assets/icons/edit.svg' alt='edit' />
+                  </div>
+                </div>
+
+                <div className='flex flex-row items-start p-0 gap-4'>
+                  <div>
+                    <img src='/assets/images/logo.png' className='w-10 h-10' />
+                  </div>
+                  <div className='md:max-w-[70%] p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
+                    Web design is essentially the art and science of crafting
+                    websites. It encompasses a blend of creativity and
+                    functionality to deliver an engaging and informative
+                    experience for users. Heres a breakdown of its key aspects:
+                    Visual Appeal: Web designers focus on the aesthetics of a
+                    website, including layout, colors, fonts, and imagery. They
+                    strive to create a visually pleasing and consistent user
+                    interface (UI) that reflects the brand identity. User
+                    Experience (UX): This is paramount in web design. Its about
+                    ensuring users can easily navigate and find the information
+                    they need on the website. A well-designed website is
+                    intuitive and user-friendly, fostering a positive user
+                    experience. Functionality: Behind the attractive facade lies
+                    a websites functionality. Web designers plan and implement
+                    features that allow users to interact with the website as
+                    intended. This may involve forms, calls to action, or
+                    e-commerce functionalities. Responsiveness: In todays
+                    mobile-first world, websites need to adapt to different
+                    screen sizes and devices. Web designers ensure websites
+                    display seamlessly across desktops, tablets, and
+                    smartphones. Web design vs. Web development: Its important
+                    to distinguish between these two often confused terms. Web
+                    design focuses on the visual and user experience aspects,
+                    while web development translates those designs into a
+                    functioning website using coding languages like HTML, CSS,
+                    and JavaScript.
+                  </div>
+
+                  <div>
+                    <img src='/assets/icons/voice.svg' alt='voice' />
+                    <img src='/assets/icons/reset.svg' alt='reset' />
+                    <img src='/assets/icons/copy.svg' alt='copy' />
+                    <img src='/assets/icons/love.svg' alt='love' />
                   </div>
                 </div>
                 <div className='flex flex-row items-start p-0 gap-4'>
@@ -306,40 +322,40 @@ export default function ChatContent() {
                   </div>
 
                   <div>
-                    <img src='/assets/icons/edit.svg' />
-                    {/* <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' /> */}
+                    <img src='/assets/icons/edit.svg' alt='edit' />
                   </div>
                 </div>
 
                 <div className='flex flex-row items-start p-0 gap-4'>
                   <div>
-                    <img src='/assets/images/logo.png' className='w-10 h-10' />
+                    <img
+                      src='/assets/images/logo.png'
+                      alt='logo'
+                      className='w-10 h-10'
+                    />
                   </div>
                   <div className='md:max-w-[70%] p-[16px] bg-[#FFFFFF] border border-[#E4E4E4] rounded-[4px_12px_12px_12px] font-medium text-[14px] leading-[140%] text-[#000A11]'>
                     Web design is essentially the art and science of crafting
                     websites. It encompasses a blend of creativity and
                     functionality to deliver an engaging and informative
-                    experience for users. Here's a breakdown of its key aspects:
+                    experience for users. Heres a breakdown of its key aspects:
                     Visual Appeal: Web designers focus on the aesthetics of a
                     website, including layout, colors, fonts, and imagery. They
                     strive to create a visually pleasing and consistent user
                     interface (UI) that reflects the brand identity. User
-                    Experience (UX): This is paramount in web design. It's about
+                    Experience (UX): This is paramount in web design. Its about
                     ensuring users can easily navigate and find the information
                     they need on the website. A well-designed website is
                     intuitive and user-friendly, fostering a positive user
                     experience. Functionality: Behind the attractive facade lies
-                    a website's functionality. Web designers plan and implement
+                    a websites functionality. Web designers plan and implement
                     features that allow users to interact with the website as
                     intended. This may involve forms, calls to action, or
-                    e-commerce functionalities. Responsiveness: In today's
+                    e-commerce functionalities. Responsiveness: In todays
                     mobile-first world, websites need to adapt to different
                     screen sizes and devices. Web designers ensure websites
                     display seamlessly across desktops, tablets, and
-                    smartphones. Web design vs. Web development: It's important
+                    smartphones. Web design vs. Web development: Its important
                     to distinguish between these two often confused terms. Web
                     design focuses on the visual and user experience aspects,
                     while web development translates those designs into a
@@ -348,10 +364,10 @@ export default function ChatContent() {
                   </div>
 
                   <div>
-                    <img src='/assets/icons/reset.svg' />
-                    <img src='/assets/icons/voice.svg' />
-                    <img src='/assets/icons/copy.svg' />
-                    <img src='/assets/icons/love.svg' />
+                    <img src='/assets/icons/voice.svg' alt='voice' />
+                    <img src='/assets/icons/reset.svg' alt='reset' />
+                    <img src='/assets/icons/copy.svg' alt='copy' />
+                    <img src='/assets/icons/love.svg' alt='love' />
                   </div>
                 </div>
               </div>
@@ -399,7 +415,7 @@ export default function ChatContent() {
           />
         </div>
         <div>
-          <img src='/assets/images/send.png' />
+          <img src='/assets/images/send.png' alt='send' />
         </div>
       </div>
     </>

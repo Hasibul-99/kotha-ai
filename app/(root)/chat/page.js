@@ -22,7 +22,7 @@ export default function Chat() {
         <div className='flex items-center justify-between w-full p-4 border-b dark:border-defaultborder/10'>
           <Link href='/'>
             <div className='flex flex-row items-center p-0 gap-[16px]'>
-              <img src='/assets/images/logo.png' />
+              <img src='/assets/images/logo.png' alt='kotha' />
               <span className='font-bold text-[24px] leading-[29px] text-[#000A11]'>
                 Kotha.ai
               </span>
@@ -72,7 +72,7 @@ export default function Chat() {
             </div>
 
             <div>
-              <img src='/assets/images/user.png' />
+              <img src='/assets/images/user.png' alt='kotha' />
             </div>
           </div>
         </div>
