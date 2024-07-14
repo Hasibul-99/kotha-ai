@@ -10,19 +10,26 @@ import {
 } from "@/components/ui/drawer";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Chat() {
   const { setTheme, resolvedTheme } = useTheme();
-  const [showChat, setShowChat] = useState(true);
 
   return (
     <div className="main-chart-wrapper gap-0 md:flex dark:dark">
-      <div className="chat-info border hidden md:block bg-[#fff] dark:bg-gray-900 dark:text-white">
-        <div className="flex items-center justify-between w-full p-4 border-b ">
+      <div className="chat-info border hidden md:block bg-[#fff] dark:bg-zinc-800 dark:text-white dark:border-r-zinc-700">
+        <div className="flex items-center justify-between w-full p-[19px] border-b dark:border-zinc-700">
           <Link href="/">
             <div className="flex flex-row items-center p-0 gap-[16px]">
-              <img src="/assets/images/logo.png" alt="kotha" />
+              <img
+                src="/assets/images/logo.png"
+                className="h-8 block dark:hidden"
+                alt="Kotha Logo"
+              />
+              <img
+                src="/assets/images/kotha.png"
+                className="h-8 hidden dark:block"
+                alt="Kotha Logo"
+              />
               <span className="font-bold text-[24px] leading-[29px] text-[#000A11] dark:text-white">
                 Kotha.ai
               </span>
@@ -34,7 +41,7 @@ export default function Chat() {
       </div>
 
       <div className="card w-full">
-        <div className="flex flex-row justify-between items-center p-[16px] gap-[10px] border-b bg-[#FFFFFF] border-[#E4E4E4] dark:bg-gray-800 dark:text-white">
+        <div className="flex flex-row justify-between items-center p-[16px] gap-[10px] border-b bg-[#FFFFFF] border-[#E4E4E4] dark:bg-zinc-800 dark:border-zinc-700 dark:text-white">
           <div className="font-bold text-[24px] leading-[150%] text-[#000A11] dark:text-white hidden md:block">
             New Chat
           </div>
@@ -50,10 +57,10 @@ export default function Chat() {
             </Drawer>
           </div>
           <div className="flex flex-row items-center p-0 gap-[16px]">
-            <div className="hidden md:flex flex-row items-center p-[8px] gap-[8px] bg-[#E4E4E4] rounded-[12px]">
+            <div className="hidden md:flex flex-row items-center p-[8px] gap-[8px] bg-[#E4E4E4] dark:bg-zinc-700 rounded-[12px]">
               <span
                 onClick={() => setTheme("light")}
-                className="w-[24px] h-[24px] bg-[#FFFFFF] rounded-[4px] relative cursor-pointer"
+                className="w-[24px] h-[24px] bg-[#FFFFFF] dark:bg-zinc-700 rounded-[4px] relative cursor-pointer"
               >
                 <img
                   src="/assets/images/sun.png"
@@ -62,7 +69,7 @@ export default function Chat() {
               </span>
               <span
                 onClick={() => setTheme("dark")}
-                className="w-[24px] h-[24px] rounded-[4px] relative cursor-pointer"
+                className="w-[24px] h-[24px] dark:bg-zinc-900 rounded-[4px] relative cursor-pointer"
               >
                 <img
                   src="/assets/images/moon.png"

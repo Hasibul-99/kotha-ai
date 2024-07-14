@@ -2,12 +2,12 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { useState } from "react";
 
 export default function ChatContent() {
-  const [showChat, setShowChat] = useState(true);
+  const [showChat, setShowChat] = useState(false);
 
   return (
     <>
       <div
-        className="chat-content h-[80vh] md:h-[515px] dark:bg-gray-900 dark:text-white"
+        className="chat-content h-[80vh] md:h-[515px] dark:bg-zinc-900 dark:text-white"
         id="main-chat-content"
         data-simplebar="init"
       >
@@ -84,7 +84,7 @@ export default function ChatContent() {
             </ScrollArea>
           </>
         ) : (
-          <>
+          <div className="overflow-auto h-full md:h-[500px]">
             <div className="flex flex-col items-center p-[100px_24px_24px] gap-[24px]">
               <div>
                 <img
@@ -93,7 +93,7 @@ export default function ChatContent() {
                   alt="kotha"
                 />
               </div>
-              <div className="font-bold text-[24px] leading-[150%] text-center text-[#000A11]">
+              <div className="font-bold text-[24px] leading-[150%] text-center text-[#000A11] dark:text-white">
                 <h1>Hello, Omar</h1>
                 <h1>How can I help you today?</h1>
               </div>
@@ -104,13 +104,13 @@ export default function ChatContent() {
                 <ActionCard text="Explain nostalgia to a kindergartener" />
               </div>
             </div>
-          </>
+          </div>
         )}
       </div>
-      <div className="flex items-start p-6 gap-6 bg-white border-t border-[#E4E4E4] dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex items-start p-6 gap-6 bg-white border-t border-[#E4E4E4] dark:bg-zinc-800 dark:border-zinc-700">
         <div className="w-full">
           <input
-            className="h-14 w-full flex items-center px-4 gap-2 bg-[#F9F9F9] border border-[#E4E4E4] rounded-lg  dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:placeholder-gray-300"
+            className="h-14 w-full flex items-center px-4 gap-2 bg-[#F9F9F9] border border-[#E4E4E4] rounded-lg dark:bg-zinc-950 dark:border-zinc-700 dark:text-white dark:placeholder-zinc-300"
             placeholder="Write here."
             type="text"
           />
@@ -129,7 +129,7 @@ const ChatMessage = ({ userImage, message, userIcon, additionalIcons }) => (
       <img src={userImage} alt="user" className="w-10 h-10" />
     </div>
     <div className="flex flex-col md:flex-row items-start gap-4">
-      <div className="md:max-w-[70%] p-4 border border-[#E4E4E4] rounded-lg font-medium text-[14px] leading-[140%] text-[#000A11] bg-white dark:bg-gray-800 dark:text-white">
+      <div className="md:max-w-[70%] p-4 border border-[#E4E4E4] rounded-lg font-medium text-[14px] leading-[140%] text-[#000A11] bg-white dark:bg-zinc-800 dark:text-white">
         {message}
       </div>
       <div className="flex items-start gap-4">
@@ -143,7 +143,7 @@ const ChatMessage = ({ userImage, message, userIcon, additionalIcons }) => (
 );
 
 const ActionCard = ({ text }) => (
-  <div className="p-4 border border-[#E4E4E4] rounded-lg font-medium text-[14px] leading-[140%] text-[#000A11] dark:text-white bg-white dark:bg-gray-800">
+  <div className="p-4 flex flex-col md:flex-row justify-center items-center gap-[10px] w-[231px] h-[112px] text-center border border-[#E4E4E4] rounded-lg font-medium text-[14px] leading-[140%] text-[#000A11] dark:text-white bg-white dark:bg-zinc-800">
     {text}
   </div>
 );
