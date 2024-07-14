@@ -125,7 +125,7 @@ export default function ChatContent() {
 
 const ChatMessage = ({ userImage, message, userIcon, additionalIcons }) => (
   <div className="flex items-start gap-4">
-    <div className="w-10 h-10">
+    <div className="w-10 h-10 contents">
       <img src={userImage} alt="user" className="w-10 h-10" />
     </div>
     <div className="flex flex-col md:flex-row items-start gap-4">
