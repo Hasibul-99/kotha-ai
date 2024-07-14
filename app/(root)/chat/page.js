@@ -18,8 +18,8 @@ export default function Chat() {
 
   return (
     <div className='main-chart-wrapper gap-0 md:flex'>
-      <div className='chat-info border dark:border-defaultborder/10 bg-[#fff] hidden md:block'>
-        <div className='flex items-center justify-between w-full p-4 border-b dark:border-defaultborder/10'>
+      <div className='chat-info border bg-[#fff] hidden md:block'>
+        <div className='flex items-center justify-between w-full p-4 border-b '>
           <Link href='/'>
             <div className='flex flex-row items-center p-0 gap-[16px]'>
               <img src='/assets/images/logo.png' alt='kotha' />

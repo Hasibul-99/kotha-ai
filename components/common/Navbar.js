@@ -6,8 +6,7 @@ export default function Navbar() {
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
         <a href='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
           <img src='/assets/images/logo.png' className='h-8' alt='Kotha Logo' />
-          <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
-            {/* Flowbite */}
+          <span className='self-center text-2xl font-semibold whitespace-nowrap text-[#000A11] dark:text-white'>
             Kotha.ai
           </span>
         </a>
@@ -15,16 +14,16 @@ export default function Navbar() {
           <Link href='/signin'>
             <button
               type='button'
-              className='text-[#000A11] border border-[#000A11] font-medium rounded-[12px] text-sm px-4 py-2 text-center'
+              className='text-[#000A11] dark:text-white border border-[#000A11] dark:border-white font-medium rounded-[12px] text-sm px-4 py-2 text-center'
             >
               Sign in
             </button>
           </Link>
 
-          <Link href={'/signup'}>
+          <Link href='/signup'>
             <button
               type='button'
-              className='text-white bg-[#000A11] hover:bg-[#000A11]  font-medium rounded-[12px] text-sm px-4 py-2 text-center'
+              className='text-white bg-[#000A11] dark:bg-white dark:text-[#000A11] hover:bg-[#000A11] dark:hover:bg-[#ffffffb3] font-medium rounded-[12px] text-sm px-4 py-2 text-center'
             >
               Sign up
             </button>

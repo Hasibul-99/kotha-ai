@@ -22,7 +22,7 @@ export default function Home() {
                 />
                 <h1
                   data-animate='title'
-                  className='font-bold text-[32px] md:text-6xl leading-[130%] text-center capitalize text-[#000A11]'
+                  className='font-bold text-[32px] md:text-6xl leading-[130%] text-center capitalize text-[#000A11] dark:text-[#FFFFFF]'
                   style={{opacity: 1, transform: 'translateY(0px)'}}
                 >
                   Boost your creativity and productivity
@@ -30,7 +30,7 @@ export default function Home() {
                 <div className=''>
                   <p
                     data-animate='subtitle'
-                    className='font-normal text-[15px] md:text-[20px] leading-[170%] text-center text-[#2D2D2D]'
+                    className='font-normal text-[15px] md:text-[20px] leading-[170%] text-center text-[#2D2D2D] dark:text-[#CCCCCC]'
                     style={{opacity: 1, transform: 'translateY(0px)'}}
                   >
                     Unleash your full potential with enhanced creativity and
@@ -38,11 +38,11 @@ export default function Home() {
                     maximize your output and spark innovative ideas.
                   </p>
                 </div>
-                <div className='flex justify-center mx-auto '>
-                  <div className='px-[22px] py-[7px] w-[199px] h-[60px] bg-[#000A11] rounded-[12px] flex justify-center items-center cursor-pointer'>
+                <div className='flex justify-center mx-auto'>
+                  <div className='px-[22px] py-[7px] w-[199px] h-[60px] bg-[#000A11] dark:bg-[#FFFFFF] rounded-[12px] flex justify-center items-center cursor-pointer'>
                     <Link
                       href={'/chat'}
-                      className='font-normal text-[16px] leading-[140%] text-[#FFFFFF]'
+                      className='font-normal text-[16px] leading-[140%] text-[#FFFFFF] dark:text-[#000A11]'
                     >
                       Try for Free
                     </Link>

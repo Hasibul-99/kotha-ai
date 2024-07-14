@@ -22,7 +22,7 @@ import {IoSettingsOutline} from 'react-icons/io5'
 export default function ChatList() {
   return (
     <>
-      <div className='p-4 dark:border-defaultborder/10'>
+      <div className='p-4'>
         <button
           aria-label='button'
           className='flex flex-row justify-center items-center p-0 gap-[12px] w-full md:w-[268px] h-[40px] bg-[#000A11] rounded-[8px] font-normal font-medium text-[14px] leading-[140%] text-[#FFFFFF]'
