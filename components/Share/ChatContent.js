@@ -98,10 +98,22 @@ export default function ChatContent() {
                 <h1>How can I help you today?</h1>
               </div>
               <div className="flex flex-row flex-wrap justify-center items-start gap-4">
-                <ActionCard text="Teach me the concept of game theory in simple terms" />
-                <ActionCard text="Help me draft a response to a friend" />
-                <ActionCard text="Explain the key rules of rugby, starting with the basics" />
-                <ActionCard text="Explain nostalgia to a kindergartener" />
+                <ActionCard
+                  text="Teach me the concept of game theory in simple terms"
+                  setShowChat={setShowChat}
+                />
+                <ActionCard
+                  text="Help me draft a response to a friend"
+                  setShowChat={setShowChat}
+                />
+                <ActionCard
+                  text="Explain the key rules of rugby, starting with the basics"
+                  setShowChat={setShowChat}
+                />
+                <ActionCard
+                  text="Explain nostalgia to a kindergartener"
+                  setShowChat={setShowChat}
+                />
               </div>
             </div>
           </div>
@@ -142,7 +154,7 @@ const ChatMessage = ({ userImage, message, userIcon, additionalIcons }) => (
   </div>
 );
 
-const ActionCard = ({ text }) => (
+const ActionCard = ({ text, setShowChat }) => (
   <div
     onClick={() => {
       setShowChat(true);
