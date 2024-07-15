@@ -143,7 +143,12 @@ const ChatMessage = ({ userImage, message, userIcon, additionalIcons }) => (
 );
 
 const ActionCard = ({ text }) => (
-  <div className="p-4 flex flex-col md:flex-row justify-center items-center gap-[10px] w-[231px] h-[112px] text-center border border-[#E4E4E4] rounded-lg font-medium text-[14px] leading-[140%] text-[#000A11] dark:text-white bg-white dark:bg-zinc-800">
+  <div
+    onClick={() => {
+      setShowChat(true);
+    }}
+    className="p-4 flex flex-col md:flex-row justify-center items-center gap-[10px] w-[231px] h-[112px] text-center border border-[#E4E4E4] rounded-lg font-medium text-[14px] leading-[140%] text-[#000A11] dark:text-white bg-white dark:bg-zinc-800"
+  >
     {text}
   </div>
 );
